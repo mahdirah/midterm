@@ -1,0 +1,30 @@
+body {
+    background: #00ffff;
+    margin: 0;
+}
+
+.flex {
+    display: flex;
+}
+
+#main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    width: 100%;
+    height: 100vh;
+}
+
+.wrapper {
+    width: 500px;
+    height: 500px;
+    border-radius: 10px;
+    background: #fff;
+    box-shadow: 6px 8px 10px -2px #615f5f;
+}
+
+.wrapper-cols {
+    flex: 1;
+    padding: 1rem 1.5rem;
+}
