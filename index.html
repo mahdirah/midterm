@@ -16,11 +16,11 @@
                 <h2>Mr. or Ms. ?</h2>
 
                 <form>
-                    <div>
-                        <label>
+                    <div class="flex">
+                        <label for="name" style="margin-right: 1rem;">
                             Name
-                            <input type="text" id="name" maxlength="255">
                         </label>
+                        <input type="text" id="name" maxlength="255" name="name">
                     </div>
                     <div style="display: grid; margin: 1rem 0;">
                         <label style="margin: 0.5rem 0">
@@ -32,14 +32,28 @@
                             Female
                         </label>
                     </div>
-                    <div style="display: grid">
-                        <button type="submit" id="submit" style="margin: 0.5rem 0" onclick="onSubmit()">submit</button>
-                        <button type="reset">reset</button>
+                    <div class="flex" style="flex-direction: column">
+                        <button type="submit" id="submit" style="width: 75%; margin-bottom: 0.5rem" onclick="onSubmit()">submit</button>
+                        <button type="button" style="width: 75%" onclick="onSave()">save</button>
                     </div>
                 </form>
             </div>
-            <div class="wrapper-cols">
-                <h2>Prediction</h2>
+            <div class="wrapper-cols flex" style="flex-direction: column;">
+                <div style="flex: 1">
+                    <h2>Prediction</h2>
+
+                    <div id="predicted-gender"></div>
+                    <div id="predicted-percent"></div>
+                </div>
+                <div class="saved-wrapper" style="flex: 1; display: none" id="has-save">
+                    <h2>
+                        Saved
+                        <br>
+                        Answer
+                    </h2>
+                    <div id="saved-gender"></div>
+                    <button type="button" onclick="onRemoveLocal()">Clear</button>
+                </div>
             </div>
         </div>
     </div>

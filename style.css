@@ -17,8 +17,6 @@ body {
 }
 
 .wrapper {
-    width: 500px;
-    height: 500px;
     border-radius: 10px;
     background: #fff;
     box-shadow: 6px 8px 10px -2px #615f5f;
@@ -27,4 +25,8 @@ body {
 .wrapper-cols {
     flex: 1;
     padding: 1rem 1.5rem;
+}
+
+.saved-wrapper {
+    border: 1px dashed #000;
 }
