@@ -32,9 +32,9 @@
                             Female
                         </label>
                     </div>
-                    <div class="flex" style="flex-direction: column">
-                        <button type="submit" id="submit" style="width: 75%; margin-bottom: 0.5rem" onclick="onSubmit()">submit</button>
-                        <button type="button" style="width: 75%" onclick="onSave()">save</button>
+                    <div style="display: grid">
+                        <button type="submit" id="submit" style="margin: 0.5rem 0" onclick="onSubmit()">submit</button>
+                        <button type="button" onclick="onSave()">save</button>
                     </div>
                 </form>
             </div>
@@ -55,6 +55,10 @@
                     <button type="button" onclick="onRemoveLocal()">Clear</button>
                 </div>
             </div>
+        </div>
+        <!-- error message wrapper -->
+        <div style="background: red; color: #fff;width: 100%;text-align: center; display: none" id="error-msg">
+                Oops!! Error while Predicting!
         </div>
     </div>
 </main>
